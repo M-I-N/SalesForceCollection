@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UaR-WP-xY7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fGF-OD-zf7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Sales Force-->
         <scene sceneID="5du-gf-HhK">
             <objects>
                 <collectionViewController id="UaR-WP-xY7" customClass="CollectionViewController" customModule="SalesForceCollection" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,10 +28,29 @@
                             <outlet property="delegate" destination="UaR-WP-xY7" id="ma3-PD-oNx"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Sales Force" id="Tgm-9x-lOp"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0r-rQ-fVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-192" y="101"/>
+            <point key="canvasLocation" x="717.39130434782612" y="100.44642857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YTx-dd-1dR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fGF-OD-zf7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ofY-Mg-IWi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UaR-WP-xY7" kind="relationship" relationship="rootViewController" id="PxW-w4-AFm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxI-KF-LVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192.75362318840581" y="100.44642857142857"/>
         </scene>
     </scenes>
     <resources>
