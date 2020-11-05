@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="SalesForceCollection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYH-VE-SUH">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cfE-Uk-fR0">
+                                <rect key="frame" x="8" y="55" width="184" height="90.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SUp-D6-Bc3">
+                                        <rect key="frame" x="67" y="0.5" width="50" height="49"/>
+                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="DBV-qZ-xTA"/>
+                                            <constraint firstAttribute="width" secondItem="SUp-D6-Bc3" secondAttribute="height" multiplier="1:1" id="EP0-Yr-8zH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-2c-jFa">
+                                        <rect key="frame" x="13" y="70" width="158.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="cfE-Uk-fR0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EYH-VE-SUH" secondAttribute="top" constant="20" symbolic="YES" id="2kI-I7-Dxg"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cfE-Uk-fR0" secondAttribute="bottom" constant="20" symbolic="YES" id="Trc-Ep-q1n"/>
+                            <constraint firstItem="cfE-Uk-fR0" firstAttribute="leading" secondItem="EYH-VE-SUH" secondAttribute="leading" constant="8" id="hrU-xZ-bpF"/>
+                            <constraint firstAttribute="trailing" secondItem="cfE-Uk-fR0" secondAttribute="trailing" constant="8" id="ocB-NV-BiU"/>
+                            <constraint firstItem="cfE-Uk-fR0" firstAttribute="centerY" secondItem="EYH-VE-SUH" secondAttribute="centerY" id="zJv-EY-IKc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EYH-VE-SUH" secondAttribute="trailing" id="0sa-MA-j8B"/>
+                <constraint firstItem="EYH-VE-SUH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bVp-kE-kUU"/>
+                <constraint firstAttribute="bottom" secondItem="EYH-VE-SUH" secondAttribute="bottom" id="fxE-t0-vBE"/>
+                <constraint firstItem="EYH-VE-SUH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wet-Y9-7Bh"/>
+            </constraints>
+            <size key="customSize" width="200" height="200"/>
+            <point key="canvasLocation" x="143.47826086956522" y="158.70535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
